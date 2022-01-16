@@ -1,0 +1,18 @@
+---- PostgreSQL ----
+
+### DATABASE setting
+--- CREATE USER "foods_User" WITH PASSWORD 'foods_root';
+--- CREATE DATABASE "foods.db" OWNER 'foods_user';
+
+
+### Create user
+
+--- python manage.py createsuperuser
+
+    username --- admin
+    email --- admin@foods.uz
+    password --- 123456
+
+### How to use dumpdata and loaddata
+----- python manage.py dumpdata app_name > app_name/fixtures/db.json
+----- python manage.py loaddata db.json
